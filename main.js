@@ -1,4 +1,90 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Vehicle Data for Wizard
+    const vehicleData = {
+        sedan: {
+            brands: {
+                toyota: ['Corolla', 'Camry'],
+                honda: ['Civic', 'City'],
+                chevrolet: ['Onix Plus', 'Cruze'],
+                vw: ['Virtus', 'Jetta']
+            }
+        },
+        suv: {
+            brands: {
+                jeep: ['Compass', 'Renegade'],
+                toyota: ['Corolla Cross', 'SW4'],
+                honda: ['HR-V', 'ZR-V'],
+                hyundai: ['Creta', 'Tucson']
+            }
+        },
+        picape: {
+            brands: {
+                toyota: ['Hilux'],
+                ford: ['Ranger'],
+                chevrolet: ['S10'],
+                fiat: ['Toro', 'Strada']
+            }
+        },
+        hatch: {
+            brands: {
+                vw: ['Polo', 'Gol'],
+                hyundai: ['HB20'],
+                fiat: ['Argo', 'Mobi'],
+                chevrolet: ['Onix']
+            }
+        }
+    };
+
+    // Wizard Elements
+    const typeSelect = document.getElementById('vehicle-type');
+    const brandSelect = document.getElementById('vehicle-brand');
+    const modelSelect = document.getElementById('vehicle-model');
+    const steps = document.querySelectorAll('.wizard-step-item');
+
+    typeSelect.addEventListener('change', () => {
+        const type = typeSelect.value;
+        brandSelect.innerHTML = '<option value="">Selecione a marca...</option>';
+        modelSelect.innerHTML = '<option value="">Aguardando marca...</option>';
+        modelSelect.disabled = true;
+
+        if (type && vehicleData[type]) {
+            brandSelect.disabled = false;
+            const brands = Object.keys(vehicleData[type].brands);
+            brands.forEach(brand => {
+                const opt = document.createElement('option');
+                opt.value = brand;
+                opt.innerText = brand.charAt(0).toUpperCase() + brand.slice(1);
+                brandSelect.appendChild(opt);
+            });
+            steps[1].classList.add('active');
+        } else {
+            brandSelect.disabled = true;
+            steps[1].classList.remove('active');
+            steps[2].classList.remove('active');
+        }
+    });
+
+    brandSelect.addEventListener('change', () => {
+        const type = typeSelect.value;
+        const brand = brandSelect.value;
+        modelSelect.innerHTML = '<option value="">Selecione o modelo...</option>';
+
+        if (type && brand && vehicleData[type].brands[brand]) {
+            modelSelect.disabled = false;
+            const models = vehicleData[type].brands[brand];
+            models.forEach(model => {
+                const opt = document.createElement('option');
+                opt.value = model.toLowerCase();
+                opt.innerText = model;
+                modelSelect.appendChild(opt);
+            });
+            steps[2].classList.add('active');
+        } else {
+            modelSelect.disabled = true;
+            steps[2].classList.remove('active');
+        }
+    });
+
     // Carousel Logic
     const carousel = document.getElementById('main-carousel');
     if (carousel) {
@@ -56,7 +142,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const moveSlider = (e) => {
             const rect = slider.getBoundingClientRect();
-            let x = (e.pageX || e.touches[0].pageX) - rect.left;
+            let pageX = e.pageX || (e.touches ? e.touches[0].pageX : 0);
+            let x = pageX - rect.left;
             let percent = (x / rect.width) * 100;
             
             if (percent < 0) percent = 0;
@@ -107,6 +194,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 stickyFooter.style.transform = 'translateY(100%)';
                 stickyFooter.style.opacity = '0';
             }
+        });
+        
+        stickyFooter.querySelector('button').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
 

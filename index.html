@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,125 +8,97 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <div class="top-bar">
-        🔒 Pagamento 100% Seguro | 🚚 Frete Grátis | 🔄 7 dias para devolver
+        ENVIAMOS PARA TODO O BRASIL • FRETE GRÁTIS HOJE
     </div>
 
     <header class="main-header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="assets/images/logo-oliver.png" alt="Oliveira Auto Parts">
+                    <img src="assets/images/logo-BbDuOFYn.png" alt="Oliveira Auto Parts">
                 </div>
                 <div class="secure-label">
-                    <span class="lock-icon">🔒</span> Compra Segura
+                    <span class="icon">🔒</span> COMPRA 100% SEGURA
                 </div>
             </div>
             <nav class="sub-nav">
-                <a href="#produto">Produto</a>
-                <a href="#beneficios">Benefícios</a>
-                <a href="#avaliacoes">Avaliações</a>
-                <a href="#garantia">Garantia</a>
-                <a href="#faq">FAQ</a>
-                <a href="#sobre-nos">Sobre Nós</a>
+                <a href="#inicio">INÍCIO</a>
+                <a href="#beneficios">BENEFÍCIOS</a>
+                <a href="#comparacao">COMPARAÇÃO</a>
+                <a href="#depoimentos">DEPOIMENTOS</a>
+                <a href="#faq">DÚVIDAS</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero" id="produto">
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
             <div class="container">
-                <h1>Tapete Bandeja 3D Premium para o seu Carro</h1>
-                <p>Proteção absoluta contra líquidos, areia e lama. O único com bordas elevadas e encaixe original de fábrica.</p>
+                <h1>Proteção Absoluta para o Carpete do seu Carro</h1>
+                <p>O Tapete 3D Premium que une sofisticação, durabilidade e limpeza impecável.</p>
                 
-                <div class="carousel-wrapper">
-                    <div class="carousel" id="main-carousel">
-                        <div class="carousel-inner">
-                            <img src="assets/images/hero-tapete-3-CjEBeeXw.jpg" class="active" alt="Tapete 3D 1">
-                            <img src="assets/images/hero-tapete-4-CTcO_2X9.jpg" alt="Tapete 3D 2">
-                            <img src="assets/images/hero-tapete-5-CLmPGSY4.jpg" alt="Tapete 3D 3">
-                        </div>
-                        <button class="nav-btn prev">❮</button>
-                        <button class="nav-btn next">❯</button>
+                <div class="carousel" id="main-carousel">
+                    <div class="carousel-inner">
+                        <img src="assets/images/hero-tapete-3-CjEBeeXw.jpg" alt="Tapete 3D" class="active">
+                        <img src="assets/images/hero-tapete-4-CTcO_2X9.jpg" alt="Tapete 3D">
+                        <img src="assets/images/hero-tapete-5-CLmPGSY4.jpg" alt="Tapete 3D">
                     </div>
+                    <button class="nav-btn prev">❮</button>
+                    <button class="nav-btn next">❯</button>
                 </div>
             </div>
         </section>
 
-        <section class="wizard-section" id="sobre-nos">
+        <!-- Wizard Section -->
+        <section class="wizard-section">
             <div class="container">
                 <div class="wizard-top-badge">
-                    <span class="cart-icon">🛒</span> Agora escolha seu carro
+                    <span class="icon">🚗</span> CONSULTE O SEU VEÍCULO
                 </div>
-                <p class="wizard-intro-text">Escolha os dados do seu carro para garantir o encaixe perfeito</p>
-                
                 <div class="wizard-card">
                     <div class="wizard-steps-container">
                         <div class="wizard-step-item active">
                             <div class="step-num">1</div>
-                            <span>Tipo</span>
                         </div>
                         <div class="step-line"></div>
                         <div class="wizard-step-item">
                             <div class="step-num">2</div>
-                            <span>Marca</span>
                         </div>
                         <div class="step-line"></div>
                         <div class="wizard-step-item">
                             <div class="step-num">3</div>
-                            <span>Modelo</span>
-                        </div>
-                        <div class="step-line"></div>
-                        <div class="wizard-step-item">
-                            <div class="step-num">4</div>
-                            <span>Ano</span>
                         </div>
                     </div>
 
-                    <div class="wizard-form-box">
+                    <div class="wizard-form">
                         <div class="form-group">
-                            <label>QUAL O TIPO DO SEU VEÍCULO?</label>
-                            <div class="select-wrapper">
-                                <select id="vehicle-type">
-                                    <option value="">Selecione o tipo</option>
-                                    <option value="sedan">Sedan</option>
-                                    <option value="suv">SUV</option>
-                                    <option value="picape">Picape</option>
-                                    <option value="hatch">Hatch</option>
-                                </select>
-                            </div>
+                            <label>1. TIPO DE VEÍCULO</label>
+                            <select id="vehicle-type">
+                                <option value="">Selecione...</option>
+                                <option value="sedan">Sedan</option>
+                                <option value="suv">SUV / Crossover</option>
+                                <option value="picape">Picape</option>
+                                <option value="hatch">Hatch</option>
+                            </select>
                         </div>
-
                         <div class="form-group">
-                            <label>MARCA</label>
-                            <div class="select-wrapper">
-                                <select id="vehicle-brand" disabled>
-                                    <option value="">Selecione a marca</option>
-                                </select>
-                            </div>
+                            <label>2. MARCA</label>
+                            <select id="vehicle-brand" disabled>
+                                <option value="">Aguardando tipo...</option>
+                            </select>
                         </div>
-
                         <div class="form-group">
-                            <label>MODELO</label>
-                            <div class="select-wrapper">
-                                <select id="vehicle-model" disabled>
-                                    <option value="">Selecione o modelo</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label>ANO</label>
-                            <div class="select-wrapper">
-                                <select id="vehicle-year" disabled>
-                                    <option value="">Selecione o ano</option>
-                                </select>
-                            </div>
+                            <label>3. MODELO</label>
+                            <select id="vehicle-model" disabled>
+                                <option value="">Aguardando marca...</option>
+                            </select>
                         </div>
                     </div>
                 </div>
 
+                <!-- Product Selection (Visible after wizard) -->
                 <div class="product-pricing-card">
                     <div class="product-image-box">
                         <img src="assets/images/kit-interno-Tk9H7iJ2.jpg" alt="Kit Interno">
@@ -162,248 +134,99 @@
                         <div class="installments">ou em até 3x sem juros no cartão</div>
                     </div>
                 </div>
-
-                <div class="delivery-card">
-                    <div class="delivery-header">
-                        <span>🚚</span> Calcular prazo de entrega
-                    </div>
-                    <div class="delivery-input-group">
-                        <input type="text" id="cep-input" placeholder="00000-000">
-                        <button id="btn-consult">Consultar</button>
-                    </div>
-                    <a href="#" class="no-cep">Não sei meu CEP</a>
-                    <div id="delivery-result" class="delivery-result" style="display:none;"></div>
-                </div>
             </div>
         </section>
 
-        <section class="benefits-section" id="beneficios">
-            <div class="container">
-                <h2 class="section-title">Por Que o Tapete Bandeja 3D é Diferente?</h2>
-                
-                <div class="benefit-card">
-                    <img src="assets/images/hero-tapete-3-CjEBeeXw.jpg" alt="Impermeável">
-                    <div class="benefit-content">
-                        <div class="benefit-icon-box blue-soft">💧</div>
-                        <h3>100% Impermeável</h3>
-                        <p>Borracha TPE forma barreira completa. Borda elevada retém líquidos e sujeira.</p>
-                        <ul class="benefit-list">
-                            <li><span class="check">✓</span> Limpeza em segundos</li>
-                            <li><span class="check">✓</span> Não retém odores</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="benefit-card">
-                    <img src="assets/images/hero-tapete-4-CTcO_2X9.jpg" alt="Sob Medida">
-                    <div class="benefit-content">
-                        <div class="benefit-icon-box blue-soft">📏</div>
-                        <h3>100% Sob Medida</h3>
-                        <p>Modelado para o assoalho exato do seu carro. Encaixe milimétrico sem folgas.</p>
-                        <ul class="benefit-list">
-                            <li><span class="check">✓</span> Cobertura total do assoalho</li>
-                            <li><span class="check">✓</span> Sem corte ou ajuste</li>
-                            <li><span class="check">✓</span> +500 modelos disponíveis</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="benefit-card">
-                    <img src="assets/images/hero-tapete-5-CLmPGSY4.jpg" alt="Fixação Original">
-                    <div class="benefit-content">
-                        <div class="benefit-icon-box blue-soft">🔧</div>
-                        <h3>Fixação Original de Fábrica</h3>
-                        <p>Encaixa nos pinos originais do seu veículo. Tapete fixo durante toda a direção.</p>
-                        <ul class="benefit-list">
-                            <li><span class="check">✓</span> Não desloca em frenagens</li>
-                            <li><span class="check">✓</span> Encaixe nos pinos originais</li>
-                            <li><span class="check">✓</span> Maior segurança</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="comparison-section">
+        <!-- Before/After Section -->
+        <section id="comparacao" class="benefits-section">
             <div class="container">
                 <h2 class="section-title">Veja a Diferença na Prática</h2>
-                <p class="section-subtitle">Deslize para comparar antes e depois da instalação</p>
+                <p class="section-subtitle">Deslize para comparar o tapete comum vs nosso Tapete 3D Premium</p>
                 
                 <div class="comparison-slider" id="comparison-slider">
                     <div class="img after-img">
                         <img src="assets/images/hero-tapete-3-CjEBeeXw.jpg" alt="Depois">
-                        <span class="label after">DEPOIS</span>
+                        <span class="label after">DEPOIS (OLIVEIRA)</span>
                     </div>
                     <div class="img before-img">
-                        <img src="assets/images/kit-interno-Tk9H7iJ2.jpg" alt="Antes">
+                        <img src="assets/images/social-proof/1.png" alt="Antes">
                         <span class="label before">ANTES</span>
                     </div>
-                    <div class="slider-handle">
-                        <div class="handle-circle">↔</div>
-                    </div>
+                    <div class="slider-handle"></div>
                 </div>
             </div>
         </section>
 
-        <section class="video-testimonials-section" id="avaliacoes">
+        <!-- Social Proof Videos -->
+        <section id="depoimentos" class="benefits-section" style="background: #f8faff;">
             <div class="container">
-                <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
-                <p class="section-subtitle">4.9/5 — 847 avaliações verificadas</p>
-                
-                <h3 class="video-subtitle">🎥 Depoimentos em Vídeo</h3>
-                
+                <h2 class="section-title">Quem Usa, Recomenda</h2>
                 <div class="video-grid">
                     <div class="video-card">
-                        <video loop muted playsinline>
-                            <source src="assets/videos/video-homem-1.mp4" type="video/mp4">
-                        </video>
-                        <div class="video-overlay">
-                            <div class="play-btn">▶</div>
-                            <strong>Carlos Mendes</strong>
-                        </div>
+                        <video src="assets/videos/video-mulher-2.mp4" playsinline loop></video>
+                        <div class="play-btn">▶</div>
                     </div>
                     <div class="video-card">
-                        <video loop muted playsinline>
-                            <source src="assets/videos/video-mulher-1.mp4" type="video/mp4">
-                        </video>
-                        <div class="video-overlay">
-                            <div class="play-btn">▶</div>
-                            <strong>Patrícia Souza</strong>
-                        </div>
+                        <video src="assets/videos/video-homem-1.mp4" playsinline loop></video>
+                        <div class="play-btn">▶</div>
                     </div>
-                </div>
-
-                <div class="testimonial-cards-grid">
-                    <div class="testimonial-card">
-                        <img src="assets/images/hero-tapete-4-CTcO_2X9.jpg" alt="Review Marcos">
-                        <div class="testimonial-body">
-                            <div class="testimonial-user">
-                                <div class="user-initials">MS</div>
-                                <div class="user-info">
-                                    <strong>Marcos Silva</strong>
-                                    <span>São Paulo, SP · VW Virtus 2022</span>
-                                </div>
-                            </div>
-                            <div class="stars">⭐⭐⭐⭐⭐ <span class="date">12/03/2026</span></div>
-                            <p>"Encaixou perfeitinho! A borda segurou até o café que derrubei na correria. Muito melhor que o original."</p>
-                            <div class="verified-badge">🛡️ Compra Verificada</div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-body">
-                            <div class="testimonial-user">
-                                <div class="user-initials">PL</div>
-                                <div class="user-info">
-                                    <strong>Paulo Lopes</strong>
-                                    <span>Campinas, SP · Chery Tiggo 7 2024</span>
-                                </div>
-                            </div>
-                            <div class="stars">⭐⭐⭐⭐⭐ <span class="date">08/04/2026</span></div>
-                            <p>"Porta-malas ficou 100% protegido. Encaixe perfeito, parece peça original. Recomendo demais!"</p>
-                            <div class="verified-badge">🛡️ Compra Verificada</div>
-                        </div>
+                    <div class="video-card">
+                        <video src="assets/videos/video-homem-2.mp4" playsinline loop></video>
+                        <div class="play-btn">▶</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="specs-section" id="garantia">
-            <div class="container">
-                <h2 class="section-title">Especificações Técnicas</h2>
-                <div class="specs-table-card">
-                    <table class="specs-table">
-                        <tr><td>Material</td><td>Borracha TPE de Alta Densidade</td></tr>
-                        <tr><td>Espessura</td><td>6mm</td></tr>
-                        <tr><td>Bordas</td><td>Elevadas até 5cm</td></tr>
-                        <tr><td>Fixação</td><td>Ilhós originais de fábrica</td></tr>
-                        <tr><td>Cobertura</td><td>Assoalho completo sob medida</td></tr>
-                        <tr><td>Limpeza</td><td>Lavável com água e sabão</td></tr>
-                        <tr><td>Garantia</td><td>12 meses</td></tr>
-                        <tr><td>Cor</td><td>Preto</td></tr>
-                        <tr><td>Aplicação</td><td>+500 modelos de veículos</td></tr>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <section class="about-us-section" id="sobre-nos-full">
-            <div class="container">
-                <p class="about-subtitle">POR QUE CONFIAR NA OLIVEIRA AUTO PARTS?</p>
-                <h2 class="section-title">Empresa com estrutura real e compromisso com cada cliente</h2>
-                <p class="about-text">Não somos uma loja de fundo de quintal. Temos loja física, equipe dedicada e um processo de qualidade que garante o tapete certo para o seu carro.</p>
-                
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <strong>15.000+</strong>
-                        <span>Clientes atendidos</span>
-                    </div>
-                    <div class="stat-item">
-                        <strong>12 meses</strong>
-                        <span>Garantia real</span>
-                    </div>
-                    <div class="stat-item">
-                        <strong>48h</strong>
-                        <span>Prazo de envio</span>
-                    </div>
-                    <div class="stat-item">
-                        <strong>4.9★</strong>
-                        <span>Avaliação média</span>
-                    </div>
-                </div>
-
-                <div class="about-image-card">
-                    <img src="assets/images/hero-tapete-3-CjEBeeXw.jpg" alt="Estrutura Oliver">
-                    <div class="about-image-content">
-                        <h3>Uma empresa real, com história e compromisso</h3>
-                        <p>A Oliveira Auto Parts nasceu da paixão por qualidade e proteção automotiva. Com loja física, atendimento humano e milhares de clientes satisfeitos em todo o Brasil.</p>
-                        <ul class="about-list">
-                            <li><span class="check">✓</span> Loja física com estoque próprio</li>
-                            <li><span class="check">✓</span> Mais de 15.000 clientes atendidos</li>
-                            <li><span class="check">✓</span> Garantia real de 12 meses</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="faq-section" id="faq">
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
             <div class="container">
                 <h2 class="section-title">Perguntas Frequentes</h2>
                 <div class="accordion">
                     <div class="accordion-item">
-                        <button class="accordion-header">O tapete serve para o meu carro? <span>+</span></button>
-                        <div class="accordion-content"><p>Sim! Nossos tapetes são fabricados sob medida para cada modelo específico de veículo, garantindo encaixe perfeito e cobertura total.</p></div>
+                        <button class="accordion-header">O tapete serve no meu carro? <span>+</span></button>
+                        <div class="accordion-content">
+                            <p>Sim! Nossos tapetes são fabricados sob medida para cada modelo de veículo, garantindo encaixe perfeito e cobertura total do carpete.</p>
+                        </div>
                     </div>
                     <div class="accordion-item">
-                        <button class="accordion-header">Como é feita a fixação do tapete? <span>+</span></button>
-                        <div class="accordion-content"><p>Eles utilizam os mesmos sistemas de ilhós e pinos originais de fábrica do seu carro, ficando totalmente travados no lugar.</p></div>
+                        <button class="accordion-header">Qual o prazo de entrega? <span>+</span></button>
+                        <div class="accordion-content">
+                            <p>O prazo médio é de 5 a 12 dias úteis, dependendo da sua região. Oferecemos Frete Grátis para todo o Brasil.</p>
+                        </div>
                     </div>
                     <div class="accordion-item">
-                        <button class="accordion-header">O tapete é realmente 100% impermeável? <span>+</span></button>
-                        <div class="accordion-content"><p>Sim, o material TPE é totalmente impermeável. A borda elevada de até 5cm retém líquidos e impede que caiam no carpete original.</p></div>
+                        <button class="accordion-header">O material é resistente? <span>+</span></button>
+                        <div class="accordion-content">
+                            <p>Sim, utilizamos TPE de alta densidade, resistente a rasgos, furos e variações extremas de temperatura. Não resseca e não deforma.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Final CTA -->
         <section class="final-cta-section">
             <div class="container">
-                <h2 class="cta-title">Não Deixe Para Depois — Proteja Seu Carro Agora</h2>
-                <p>Oferta da Semana do Cliente — Válida por tempo limitado</p>
+                <h2 class="cta-title">Garanta o Seu com Desconto Exclusivo</h2>
+                <div class="stock-warning">⚠️ Apenas 47 unidades em estoque para esta promoção</div>
                 
                 <div class="countdown-timer">
-                    <div class="timer-unit"><div class="unit-val" id="days">00</div><span>Dias</span></div>
-                    <div class="timer-unit"><div class="unit-val" id="hours">13</div><span>Horas</span></div>
-                    <div class="timer-unit"><div class="unit-val" id="minutes">24</div><span>Min</span></div>
-                    <div class="timer-unit"><div class="unit-val" id="seconds">02</div><span>Seg</span></div>
+                    <div class="timer-unit">
+                        <div class="unit-val" id="hours">13</div>
+                        <span>Horas</span>
+                    </div>
+                    <div class="timer-unit">
+                        <div class="unit-val" id="minutes">24</div>
+                        <span>Min</span>
+                    </div>
+                    <div class="timer-unit">
+                        <div class="unit-val" id="seconds">02</div>
+                        <span>Seg</span>
+                    </div>
                 </div>
 
-                <div class="stock-warning">
-                    <span>⚠️ Apenas 47 unidades em estoque para o modelo selecionado</span>
-                </div>
-
-                <button class="btn-primary-large">GARANTIR MEU TAPETE COM DESCONTO →</button>
+                <button class="btn-primary-large">ESCOLHER MEU VEÍCULO AGORA</button>
             </div>
         </section>
     </main>
@@ -411,22 +234,20 @@
     <footer class="main-footer">
         <div class="container">
             <div class="footer-logo">
-                <img src="assets/images/logo-oliver.png" alt="Oliveira Auto Parts">
+                <img src="assets/images/logo-BbDuOFYn.png" alt="Oliveira Auto Parts">
             </div>
-            <p class="address">Rua Jose do Carmo da Silva, 49 — Park Empresarial de Iracemápolis, Iracemápolis - SP</p>
-            <div class="whatsapp-contact">
-                <span>📱</span> (11) 5304-1574
-            </div>
+            <p class="address">Av. Primeiro de Maio, 1234 - Iracemápolis, SP - CEP 13495-000</p>
+            <div class="whatsapp-contact">Suporte via WhatsApp: (19) 99876-5432</div>
             <div class="footer-links">
-                <a href="#sobre-nos">Sobre Nós</a>
                 <a href="#">Termos de Uso</a>
                 <a href="#">Política de Privacidade</a>
-                <a href="#">Contato</a>
+                <a href="#">Trocas e Devoluções</a>
             </div>
         </div>
     </footer>
 
-    <div class="sticky-footer">
+    <!-- Sticky Footer -->
+    <div class="sticky-footer" style="transform: translateY(100%); opacity: 0; transition: all 0.3s;">
         <button class="btn-sticky-action">ESCOLHER MEU TAPETE</button>
     </div>
 
