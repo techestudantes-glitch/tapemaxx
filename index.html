@@ -2,8 +2,8 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oliveira Auto Parts | Tapetes Automotivos 3D Premium</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Oliveira Auto Parts | Tapetes 3D Premium</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -20,50 +20,43 @@
                     <img src="assets/images/logo-BbDuOFYn.png" alt="Oliveira Auto Parts">
                 </div>
                 <div class="secure-label">
-                    <i class="fas fa-lock"></i> Compra 100% Segura
+                    <i class="fas fa-lock"></i> Compra Segura
                 </div>
             </div>
             <nav class="sub-nav">
-                <a href="#inicio">Início</a>
-                <a href="#beneficios">Diferenciais</a>
+                <a href="#produto">Produto</a>
+                <a href="#beneficios">Benefícios</a>
                 <a href="#depoimentos">Depoimentos</a>
-                <a href="#sobre-nos">Por que Confiar?</a>
+                <a href="#sobre-nos">Sobre Nós</a>
                 <a href="#faq">Dúvidas</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="inicio" class="hero">
+        <!-- Hero -->
+        <section class="hero" id="produto">
             <div class="container">
                 <p style="color: var(--primary); font-size: 10px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px;">Tapete Bandeja 3D • Sob Medida</p>
                 <h1>Proteção Total Para o Assoalho do Seu Carro</h1>
-                <p>100% sob medida. Borda elevada. Impermeável. Encaixe no seu carro sem folga.</p>
+                <p>100% sob medida. Borda elevada. Impermeável. Encaixe perfeito sem folgas.</p>
                 
                 <div class="carousel" id="main-carousel">
                     <div class="carousel-inner">
-                        <img src="assets/images/hero-tapete-3-CjEBeeXw.jpg" alt="Tapete 3D" class="active">
-                        <img src="assets/images/hero-tapete-4-CTcO_2X9.jpg" alt="Tapete 3D">
-                        <img src="assets/images/hero-tapete-5-CLmPGSY4.jpg" alt="Tapete 3D">
-                    </div>
-                    <button class="nav-btn prev">❮</button>
-                    <button class="nav-btn next">❯</button>
-                    <div class="carousel-dots">
-                        <div class="dot active"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
+                        <img src="assets/images/hero-tapete-3-CjEBeeXw.jpg" class="active" alt="Tapete 3D 1">
+                        <img src="assets/images/hero-tapete-4-CTcO_2X9.jpg" alt="Tapete 3D 2">
+                        <img src="assets/images/hero-tapete-5-CLmPGSY4.jpg" alt="Tapete 3D 3">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Monte Seu Kit -->
+        <!-- Wizard -->
         <section class="wizard-section">
             <div class="container">
-                <div class="section-heading">
-                    <h2 style="text-align: center; font-size: 22px; font-weight: 800; color: var(--primary); margin-bottom: 8px;">Monte seu kit sob medida</h2>
-                    <p style="text-align: center; font-size: 13px; color: #666; margin-bottom: 25px;">Produzido sob medida para o seu carro • Envio rápido</p>
+                <div class="text-center">
+                    <h2 style="font-size: 22px; font-weight: 800; color: var(--primary);">Monte seu kit sob medida</h2>
+                    <p style="font-size: 13px; color: #666; margin-bottom: 25px;">Produzido para o seu carro • Envio rápido</p>
                 </div>
 
                 <div class="wizard-card">
@@ -78,7 +71,7 @@
                         <div class="form-group">
                             <label>Tipo de Veículo</label>
                             <select id="vehicle-type">
-                                <option value="">Escolha o tipo</option>
+                                <option value="">Selecione o tipo</option>
                                 <option value="sedan">Sedan</option>
                                 <option value="suv">SUV</option>
                                 <option value="picape">Picape</option>
@@ -95,9 +88,9 @@
                         <div class="badge">MAIS VENDIDO</div>
                         <img src="assets/images/kit-completo-DuT0vGkO.jpg" alt="Kit Completo">
                         <h3>Kit Interno + Porta-Malas</h3>
-                        <div class="price-tag">
+                        <div class="price-box">
                             <span class="old">R$ 436,46</span>
-                            <div class="new">R$ 283,70</div>
+                            <strong class="new">R$ 283,70</strong>
                         </div>
                         <button class="btn-buy">COMPRAR AGORA</button>
                     </div>
@@ -106,9 +99,9 @@
                         <div class="badge">MELHOR PREÇO</div>
                         <img src="assets/images/kit-interno-Tk9H7iJ2.jpg" alt="Kit Interno">
                         <h3>Kit Tapetes Interno</h3>
-                        <div class="price-tag">
+                        <div class="price-box">
                             <span class="old">R$ 312,80</span>
-                            <div class="new">R$ 187,10</div>
+                            <strong class="new">R$ 187,10</strong>
                         </div>
                         <button class="btn-buy">COMPRAR AGORA</button>
                     </div>
@@ -116,135 +109,156 @@
             </div>
         </section>
 
-        <!-- Diferenciais -->
-        <section id="beneficios" class="container" style="padding: 50px 16px;">
-            <h2 style="text-align: center; font-size: 24px; font-weight: 800; margin-bottom: 30px;">Por Que o Tapete Bandeja 3D é Diferente?</h2>
+        <!-- Benefits -->
+        <section id="beneficios" class="container section-padding">
+            <h2 class="text-center mb-40" style="font-size: 24px; font-weight: 800;">Por Que o Tapete Bandeja 3D é Diferente?</h2>
             <div class="benefits-grid">
                 <div class="benefit-card">
                     <img src="assets/images/capa/1.png" alt="Impermeável">
                     <div class="benefit-content">
                         <div class="benefit-header"><div class="benefit-icon"><i class="fas fa-tint"></i></div><h3>100% Impermeável</h3></div>
-                        <p>Borracha TPE forma barreira completa. Borda elevada 3cm retém tudo.</p>
-                        <ul class="benefit-list"><li><i class="fas fa-check"></i> Líquidos contidos</li><li><i class="fas fa-check"></i> Limpeza em segundos</li></ul>
+                        <ul class="benefit-list">
+                            <li><i class="fas fa-check"></i> Líquidos contidos pela borda</li>
+                            <li><i class="fas fa-check"></i> Limpeza em segundos</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="benefit-card">
                     <img src="assets/images/capa/2.png" alt="Sob Medida">
                     <div class="benefit-content">
                         <div class="benefit-header"><div class="benefit-icon"><i class="fas fa-drafting-compass"></i></div><h3>100% Sob Medida</h3></div>
-                        <p>Modelado para o assoalho exato do seu carro. Encaixe milimétrico.</p>
-                        <ul class="benefit-list"><li><i class="fas fa-check"></i> Sem corte ou ajuste</li><li><i class="fas fa-check"></i> +500 modelos</li></ul>
+                        <ul class="benefit-list">
+                            <li><i class="fas fa-check"></i> Cobertura total do assoalho</li>
+                            <li><i class="fas fa-check"></i> Sem corte ou ajuste</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
             <!-- Tech Specs -->
-            <div style="margin-top: 50px;">
-                <h2 style="text-align: center; font-size: 24px; font-weight: 800; margin-bottom: 30px;">Especificações Técnicas</h2>
+            <div class="mb-40" style="margin-top: 50px;">
+                <h2 class="text-center mb-20" style="font-size: 22px; font-weight: 800;">Especificações Técnicas</h2>
                 <div class="specs-table">
-                    <div class="spec-row"><div class="spec-label">Material</div><div class="spec-value">Borracha TPE Premium</div></div>
+                    <div class="spec-row"><div class="spec-label">Material</div><div class="spec-value">Borracha TPE de Alta Densidade</div></div>
                     <div class="spec-row"><div class="spec-label">Bordas</div><div class="spec-value">Elevadas até 3cm</div></div>
+                    <div class="spec-row"><div class="spec-label">Fixação</div><div class="spec-value">Ilhós originais de fábrica</div></div>
                     <div class="spec-row"><div class="spec-label">Garantia</div><div class="spec-value">12 meses</div></div>
-                    <div class="spec-row"><div class="spec-label">Aplicação</div><div class="spec-value">+500 modelos</div></div>
                 </div>
-                <div class="trust-icons-row">
-                    <div class="trust-icon-item"><i class="fas fa-truck"></i><strong>Frete Grátis</strong></div>
-                    <div class="trust-icon-item"><i class="fas fa-shield-alt"></i><strong>Seguro</strong></div>
-                    <div class="trust-icon-item"><i class="fas fa-undo"></i><strong>7 Dias</strong></div>
-                    <div class="trust-icon-item"><i class="fas fa-medal"></i><strong>12 Meses</strong></div>
+                <div class="trust-row">
+                    <div class="trust-item"><i class="fas fa-truck"></i><span>Frete Grátis</span></div>
+                    <div class="trust-item"><i class="fas fa-shield-alt"></i><span>Pagamento Seguro</span></div>
+                    <div class="trust-item"><i class="fas fa-undo"></i><span>7 Dias p/ Devolver</span></div>
                 </div>
             </div>
         </section>
 
-        <!-- Why Trust Section -->
-        <section id="sobre-nos" class="trust-us-section">
+        <!-- Why Trust -->
+        <section id="sobre-nos" class="why-trust">
             <div class="container">
-                <p style="text-align: center; font-size: 11px; font-weight: 800; color: var(--primary-light); text-transform: uppercase; margin-bottom: 10px;">POR QUE CONFIAR NA OLIVEIRA AUTO PARTS?</p>
-                <h2 style="text-align: center; font-size: 26px; font-weight: 800; margin-bottom: 15px;">Empresa com estrutura real e compromisso</h2>
-                <p style="text-align: center; font-size: 14px; color: #666; max-width: 800px; margin: 0 auto 40px;">Não somos uma loja de fundo de quintal. Temos loja física, equipe dedicada e um processo de qualidade que garante o tapete certo para o seu carro.</p>
-
-                <div class="trust-stats">
-                    <div class="stat-item"><h4>15.000+</h4><p>Clientes atendidos</p></div>
-                    <div class="stat-item"><h4>12 meses</h4><p>Garantia real</p></div>
-                    <div class="stat-item"><h4>48h</h4><p>Prazo de envio</p></div>
-                    <div class="stat-item"><h4>4.9★</h4><p>Avaliação média</p></div>
+                <p class="text-center" style="font-size: 10px; font-weight: 800; color: var(--primary-light); text-transform: uppercase; margin-bottom: 10px;">POR QUE CONFIAR NA OLIVEIRA AUTO PARTS?</p>
+                <h2 class="text-center mb-20" style="font-size: 24px; font-weight: 800; line-height: 1.2;">Empresa com estrutura real e compromisso com cada cliente</h2>
+                
+                <div class="stats-grid">
+                    <div class="stat-box"><strong>15.000+</strong><span>Clientes</span></div>
+                    <div class="stat-box"><strong>12 meses</strong><span>Garantia</span></div>
+                    <div class="stat-box"><strong>48h</strong><span>Envio</span></div>
+                    <div class="stat-box"><strong>4.9★</strong><span>Avaliação</span></div>
                 </div>
 
-                <div class="trust-showcase">
-                    <div class="trust-image">
-                        <img src="assets/images/hero-tapete-3-CjEBeeXw.jpg" alt="Loja Oliveira Auto Parts">
-                    </div>
-                    <div class="trust-details">
-                        <h3>Uma empresa real, com história e compromisso</h3>
-                        <p>A Oliveira Auto Parts nasceu da paixão por qualidade e proteção automotiva. Com loja física, atendimento humano e milhares de clientes satisfeitos em todo o Brasil.</p>
-                        <ul class="trust-checklist">
-                            <li><i class="fas fa-check-circle"></i> Loja física com estoque próprio</li>
-                            <li><i class="fas fa-check-circle"></i> Mais de 15.000 clientes atendidos</li>
-                            <li><i class="fas fa-check-circle"></i> Garantia real de 12 meses</li>
-                        </ul>
+                <div class="trust-image mb-20">
+                    <img src="assets/images/hero-tapete-3-CjEBeeXw.jpg" style="border-radius: 12px;" alt="Loja Oliveira Auto Parts">
+                </div>
+                <div class="trust-details">
+                    <h3 class="mb-10">Uma empresa real e com compromisso</h3>
+                    <p style="font-size: 14px; color: #666; margin-bottom: 20px;">A Oliveira Auto Parts nasceu da paixão por qualidade e proteção automotiva. Com loja física e atendimento humano.</p>
+                    <ul class="benefit-list">
+                        <li><i class="fas fa-check-circle"></i> Loja física com estoque próprio</li>
+                        <li><i class="fas fa-check-circle"></i> Mais de 15.000 clientes atendidos</li>
+                        <li><i class="fas fa-check-circle"></i> Garantia real de 12 meses</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section id="depoimentos" class="section-padding" style="background: #f8faff;">
+            <div class="container">
+                <h2 class="text-center mb-10" style="font-size: 24px; font-weight: 800;">O Que Nossos Clientes Dizem</h2>
+                <p class="text-center mb-40" style="font-size: 13px; color: #666;">4.9/5 — 847 avaliações verificadas</p>
+
+                <div class="video-scroll mb-40">
+                    <div class="video-item"><video src="assets/videos/video-mulher-2.mp4" playsinline loop></video></div>
+                    <div class="video-item"><video src="assets/videos/video-homem-1.mp4" playsinline loop></video></div>
+                    <div class="video-item"><video src="assets/videos/video-homem-2.mp4" playsinline loop></video></div>
+                </div>
+
+                <div class="reviews-list">
+                    <div class="product-card mb-20" style="text-align: left; padding: 15px;">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div style="width: 32px; height: 32px; background: #ddd; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 12px;">RM</div>
+                            <div><strong style="font-size: 13px; display: block;">Ricardo Mendes</strong><span style="font-size: 10px; color: #999;">Hilux • Curitiba, PR</span></div>
+                        </div>
+                        <p style="font-size: 13px; color: #444;">"Uso em obra, entra muita lama. Já lavei várias vezes e tá igual. Muito resistente."</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Reviews -->
-        <section id="depoimentos" class="reviews-section" style="background: #f8faff; padding: 60px 0;">
+        <!-- FAQ -->
+        <section id="faq" class="section-padding">
             <div class="container">
-                <h2 style="text-align: center; font-weight: 800; margin-bottom: 10px;">O Que Nossos Clientes Dizem</h2>
-                <p style="text-align: center; font-size: 13px; color: #666; margin-bottom: 40px;">4.9/5 — 847 avaliações verificadas</p>
-
-                <div class="video-reviews">
-                    <div class="video-card"><video src="assets/videos/video-mulher-2.mp4" playsinline loop></video><div class="play-icon">▶</div></div>
-                    <div class="video-card"><video src="assets/videos/video-homem-1.mp4" playsinline loop></video><div class="play-icon">▶</div></div>
-                    <div class="video-card"><video src="assets/videos/video-homem-2.mp4" playsinline loop></video><div class="play-icon">▶</div></div>
+                <h2 class="text-center mb-40" style="font-size: 24px; font-weight: 800;">Perguntas Frequentes</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-btn">O tapete serve para o meu carro? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-content"><p>Sim! Fabricamos sob medida para cada modelo específico de veículo, garantindo encaixe perfeito.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-btn">O material é realmente impermeável? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-content"><p>Sim, o material TPE é 100% impermeável e as bordas elevadas retêm qualquer líquido.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-btn">Quanto tempo leva para chegar? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-content"><p>O prazo médio de entrega é de 5 a 12 dias úteis para todo o Brasil.</p></div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Final CTA -->
-        <section class="final-cta" style="background: var(--primary); color: #fff; padding: 60px 0; text-align: center;">
+        <section class="section-padding text-center" style="background: var(--primary); color: #fff;">
             <div class="container">
-                <h2 style="font-size: 24px; font-weight: 800; margin-bottom: 20px;">Não Deixe Para Depois — Proteja Seu Carro Agora</h2>
-                <div class="countdown" style="display: flex; justify-content: center; gap: 15px; margin-bottom: 30px;">
-                    <div class="time-unit"><span class="val" id="hours-final">13</span><span class="lab">Horas</span></div>
-                    <div class="time-unit"><span class="val" id="minutes-final">28</span><span class="lab">Min</span></div>
-                    <div class="time-unit"><span class="val" id="seconds-final">58</span><span class="lab">Seg</span></div>
+                <h2 class="mb-20" style="font-size: 22px; font-weight: 800;">Proteja Seu Carro Agora</h2>
+                <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; display: inline-block; margin-bottom: 20px;">
+                    <span style="font-size: 11px; font-weight: 800;">OFERTA TERMINA EM:</span>
+                    <div style="font-size: 24px; font-weight: 800; margin-top: 5px;" id="final-timer">13:28:58</div>
                 </div>
-                <div style="background: rgba(255,255,255,0.1); display: inline-block; padding: 10px 20px; border-radius: 8px; font-size: 12px; margin-bottom: 30px;">
-                    <i class="fas fa-exclamation-triangle"></i> Apenas 47 unidades em estoque para o modelo selecionado
-                </div>
-                <button class="btn-buy" style="background: #fff; color: var(--primary); font-size: 16px; max-width: 400px; margin: 0 auto; display: block;">GARANTIR MEU TAPETE COM DESCONTO →</button>
+                <button class="btn-buy" style="background: #fff; color: var(--primary); max-width: 320px; margin: 0 auto; display: block;">GARANTIR MEU DESCONTO →</button>
             </div>
         </section>
     </main>
 
-    <footer class="footer-full">
-        <div class="container">
-            <img src="assets/images/logo-BbDuOFYn.png" alt="Oliveira Auto Parts" class="footer-logo">
-            <p class="footer-address">Rua Jose do Carmo da Silva, 49 — Park Empresarial de Iracemápolis, Iracemápolis - SP</p>
-            <a href="tel:1153041574" class="footer-phone"><i class="fab fa-whatsapp"></i> (11) 5304-1574</a>
-            
-            <div class="footer-links">
-                <a href="#inicio">Sobre Nós</a>
-                <a href="#">Termos de Uso</a>
-                <a href="#">Política de Privacidade</a>
-                <a href="#">Contato</a>
-            </div>
-
-            <div class="payment-badges">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Pix%28logo%29.svg" alt="Pix">
-            </div>
-
-            <p class="copyright">© 2026 Oliver Auto Parts. Todos os direitos reservados.</p>
+    <footer class="footer">
+        <img src="assets/images/logo-BbDuOFYn.png" alt="Oliveira Auto Parts" class="footer-logo">
+        <p>Rua Jose do Carmo da Silva, 49 — Iracemápolis, SP</p>
+        <a href="tel:1153041574" class="footer-contact">(11) 5304-1574</a>
+        <div class="footer-nav">
+            <a href="#produto">Início</a>
+            <a href="#beneficios">Diferenciais</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#">Privacidade</a>
         </div>
+        <div class="payments">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Pix%28logo%29.svg" alt="Pix">
+        </div>
+        <p style="margin-top: 30px; opacity: 0.3; font-size: 9px;">© 2026 Oliver Auto Parts. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Sticky Footer -->
-    <div class="sticky-footer" id="sticky-cta">
-        <div class="sticky-timer">OFERTA TERMINA EM: <span id="sticky-time">13:28:58</span></div>
-        <button class="btn-buy" style="padding: 10px; margin: 0; font-size: 14px;">ESCOLHER MEU TAPETE</button>
+    <div class="sticky-cta">
+        <div class="timer-bar">OFERTA TERMINA EM: <span id="sticky-time-val">13:28:58</span></div>
+        <button class="btn-buy" style="padding: 10px; font-size: 13px;">ESCOLHER MEU TAPETE</button>
     </div>
 
     <script src="main.js"></script>
