@@ -26,7 +26,6 @@
             <nav class="sub-nav">
                 <a href="#inicio">Início</a>
                 <a href="#beneficios">Benefícios</a>
-                <a href="#comparacao">Comparação</a>
                 <a href="#depoimentos">Depoimentos</a>
                 <a href="#especificacoes">Especificações</a>
                 <a href="#faq">FAQ</a>
@@ -65,30 +64,14 @@
                 <div class="section-heading">
                     <h2>Monte seu kit sob medida</h2>
                     <p style="font-size: 14px; color: #666; margin-bottom: 5px;">Produzido sob medida para o seu carro • Envio rápido</p>
-                    <div class="rating">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        <span style="color: #666; font-size: 12px; font-weight: 600;">4.9 (1.247 avaliações)</span>
-                    </div>
                 </div>
 
                 <div class="wizard-card">
                     <div class="wizard-steps">
-                        <div class="step-item active">
-                            <div class="num">1</div>
-                            <span>Tipo</span>
-                        </div>
-                        <div class="step-item">
-                            <div class="num">2</div>
-                            <span>Marca</span>
-                        </div>
-                        <div class="step-item">
-                            <div class="num">3</div>
-                            <span>Modelo</span>
-                        </div>
-                        <div class="step-item">
-                            <div class="num">4</div>
-                            <span>Ano</span>
-                        </div>
+                        <div class="step-item active"><div class="num">1</div><span>Tipo</span></div>
+                        <div class="step-item"><div class="num">2</div><span>Marca</span></div>
+                        <div class="step-item"><div class="num">3</div><span>Modelo</span></div>
+                        <div class="step-item"><div class="num">4</div><span>Ano</span></div>
                     </div>
 
                     <div class="form-grid">
@@ -99,31 +82,12 @@
                                 <option value="sedan">Sedan</option>
                                 <option value="suv">SUV</option>
                                 <option value="picape">Picape</option>
-                                <option value="hatch">Hatch</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <label>Marca</label>
-                            <select id="vehicle-brand" disabled>
-                                <option value="">Selecione o tipo primeiro</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Modelo</label>
-                            <select id="vehicle-model" disabled>
-                                <option value="">Selecione a marca primeiro</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Ano</label>
-                            <select id="vehicle-year" disabled>
-                                <option value="">Selecione o modelo primeiro</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Observação</label>
-                            <textarea placeholder="Ex: Câmbio manual, automático, versão específica..." rows="2"></textarea>
-                        </div>
+                        <div class="form-group"><label>Marca</label><select id="vehicle-brand" disabled><option>Aguardando...</option></select></div>
+                        <div class="form-group"><label>Modelo</label><select id="vehicle-model" disabled><option>Aguardando...</option></select></div>
+                        <div class="form-group"><label>Ano</label><select id="vehicle-year" disabled><option>Aguardando...</option></select></div>
+                        <div class="form-group"><label>Observação</label><textarea placeholder="Câmbio, versão..."></textarea></div>
                     </div>
                 </div>
 
@@ -133,11 +97,9 @@
                         <div class="badge">MAIS VENDIDO</div>
                         <img src="assets/images/kit-completo-DuT0vGkO.jpg" alt="Kit Completo">
                         <h3>Kit Interno + Porta-Malas</h3>
-                        <p style="font-size: 12px; color: #7a869a; margin-bottom: 10px;">Proteção completa</p>
                         <div class="price-tag">
                             <span class="old">R$ 436,46</span>
                             <div class="new">R$ 283,70</div>
-                            <div style="font-size: 11px; color: var(--primary); font-weight: 700;">ou em até 3x sem juros no cartão</div>
                         </div>
                         <button class="btn-buy">COMPRAR AGORA</button>
                     </div>
@@ -146,85 +108,11 @@
                         <div class="badge">MELHOR PREÇO</div>
                         <img src="assets/images/kit-interno-Tk9H7iJ2.jpg" alt="Kit Interno">
                         <h3>Kit Tapetes Interno</h3>
-                        <p style="font-size: 12px; color: #7a869a; margin-bottom: 10px;">Frente e Trás</p>
                         <div class="price-tag">
                             <span class="old">R$ 312,80</span>
                             <div class="new">R$ 187,10</div>
-                            <div style="font-size: 11px; color: var(--primary); font-weight: 700;">ou em até 3x sem juros no cartão</div>
                         </div>
                         <button class="btn-buy">COMPRAR AGORA</button>
-                    </div>
-                </div>
-
-                <!-- Delivery Calculator -->
-                <div class="delivery-box">
-                    <p style="font-size: 12px; font-weight: 800; color: #0d1b3e;">Calcular prazo de entrega</p>
-                    <div class="delivery-input-group">
-                        <input type="text" placeholder="00000-000">
-                        <button class="btn-calc">Calcular</button>
-                    </div>
-                    <div class="delivery-result">FRETE GRÁTIS ATIVADO PARA SUA REGIÃO</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Por Que é Diferente? -->
-        <section id="beneficios" class="container" style="padding: 60px 16px;">
-            <h2 style="text-align: center; margin-bottom: 40px; font-weight: 800;">Por Que o Tapete Bandeja 3D é Diferente?</h2>
-            <div class="review-grid">
-                <div class="product-card" style="text-align: left; padding: 0; overflow: hidden;">
-                    <img src="assets/images/hero-tapete-3-CjEBeeXw.jpg" alt="Impermeável" style="margin-bottom: 0;">
-                    <div style="padding: 20px;">
-                        <h4 style="font-size: 16px; margin-bottom: 8px;"><i class="fas fa-tint"></i> 100% Impermeável</h4>
-                        <p style="font-size: 13px; color: #666;">Borracha TPE forma barreira completa. Borda elevada 2cm retém todo líquido.</p>
-                    </div>
-                </div>
-                <div class="product-card" style="text-align: left; padding: 0; overflow: hidden;">
-                    <img src="assets/images/hero-tapete-4-CTcO_2X9.jpg" alt="Sob Medida" style="margin-bottom: 0;">
-                    <div style="padding: 20px;">
-                        <h4 style="font-size: 16px; margin-bottom: 8px;"><i class="fas fa-drafting-compass"></i> 100% Sob Medida</h4>
-                        <p style="font-size: 13px; color: #666;">Modelado para o assoalho exato do seu carro. Encaixe milimétrico sem folgas.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Before/After -->
-        <section id="comparacao" class="comparison-section">
-            <div class="container">
-                <h2 style="font-weight: 800; margin-bottom: 30px;">Veja a Diferença na Prática</h2>
-                <div class="comparison-slider" id="comparison-slider">
-                    <div class="img after-img">
-                        <img src="assets/images/hero-tapete-3-CjEBeeXw.jpg" alt="Depois">
-                        <span class="label after">DEPOIS</span>
-                    </div>
-                    <div class="img before-img">
-                        <img src="assets/images/social-proof/1.png" alt="Antes">
-                        <span class="label before">ANTES</span>
-                    </div>
-                    <div class="slider-handle"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Guarantee Section -->
-        <section class="guarantee-section">
-            <div class="container">
-                <div class="guarantee-icon"><i class="fas fa-shield-alt"></i></div>
-                <h2>Garantia Total de 12 Meses</h2>
-                <p>Acreditamos tanto na qualidade dos nossos tapetes que oferecemos 12 meses de garantia contra qualquer defeito de fabricação. Se por qualquer motivo você não ficar satisfeito nos primeiros 7 dias, devolvemos 100% do seu dinheiro sem perguntas.</p>
-                <div class="guarantee-grid">
-                    <div class="guarantee-item">
-                        <i class="fas fa-user-shield"></i>
-                        <span>Compra Protegida</span>
-                    </div>
-                    <div class="guarantee-item">
-                        <i class="fas fa-undo"></i>
-                        <span>7 dias Devolução</span>
-                    </div>
-                    <div class="guarantee-item">
-                        <i class="fas fa-medal"></i>
-                        <span>12 meses Garantia</span>
                     </div>
                 </div>
             </div>
@@ -236,68 +124,59 @@
                 <div class="reviews-header">
                     <h2>O Que Nossos Clientes Dizem</h2>
                     <p style="font-size: 13px; color: #666;">4.9/5 — 847 avaliações verificadas</p>
-                    <p style="font-size: 12px; margin-top: 15px; font-weight: 700;"><i class="fas fa-video"></i> Depoimentos em Vídeo</p>
                 </div>
 
                 <div class="video-reviews">
-                    <div class="video-card">
-                        <video src="assets/videos/video-mulher-2.mp4" playsinline loop></video>
-                        <div class="play-icon">▶</div>
-                    </div>
-                    <div class="video-card">
-                        <video src="assets/videos/video-homem-1.mp4" playsinline loop></video>
-                        <div class="play-icon">▶</div>
-                    </div>
-                    <div class="video-card">
-                        <video src="assets/videos/video-homem-2.mp4" playsinline loop></video>
-                        <div class="play-icon">▶</div>
-                    </div>
+                    <div class="video-card"><video src="assets/videos/video-mulher-2.mp4" playsinline loop></video><div class="play-icon">▶</div></div>
+                    <div class="video-card"><video src="assets/videos/video-homem-1.mp4" playsinline loop></video><div class="play-icon">▶</div></div>
+                    <div class="video-card"><video src="assets/videos/video-homem-2.mp4" playsinline loop></video><div class="play-icon">▶</div></div>
                 </div>
 
                 <div class="review-grid">
+                    <!-- Review 1 -->
                     <div class="review-card">
+                        <img src="assets/images/social-proof/2.png" alt="Instalado" class="review-photo">
                         <div class="review-user">
-                            <div class="user-avatar"></div>
-                            <div class="user-meta">
-                                <strong>Marcos Silva</strong>
-                                <span>São Paulo, SP • VW Virtus 2022</span>
-                            </div>
+                            <div class="user-avatar">R</div>
+                            <div class="user-meta"><strong>Ricardo Mendes</strong><span>Curitiba, PR • Toyota Hilux</span></div>
                         </div>
                         <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="review-text">"Encaixou perfeitamente! A borda realmente segura a sujeira e líquidos. Muito melhor que tapete universal."</p>
+                        <p class="review-text">"Uso em obra, entra muita lama. Já lavei 20 vezes e tá igual. Nunca vi tapete tão resistente."</p>
                         <div class="verified-badge"><i class="fas fa-check-circle"></i> Compra Verificada</div>
                     </div>
+                    <!-- Review 2 -->
                     <div class="review-card">
+                        <img src="assets/images/social-proof/3.png" alt="Instalado" class="review-photo">
                         <div class="review-user">
-                            <div class="user-avatar"></div>
-                            <div class="user-meta">
-                                <strong>Ana Ferreira</strong>
-                                <span>Belo Horizonte, MG • Fiat Pulse 2023</span>
-                            </div>
+                            <div class="user-avatar">C</div>
+                            <div class="user-meta"><strong>Camilla Lima</strong><span>Rio de Janeiro, RJ • Hyundai Creta</span></div>
                         </div>
                         <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="review-text">"Tenho dois filhos e meu carro vivia imundo. Agora limpo em 2 minutos. Instalação super fácil!"</p>
+                        <p class="review-text">"Chegou rápido, embalado perfeitamente. Encaixe na primeira tentativa. Indiquei para 3 amigos!"</p>
                         <div class="verified-badge"><i class="fas fa-check-circle"></i> Compra Verificada</div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ -->
-        <section id="faq" class="container" style="padding: 60px 16px;">
-            <h2 style="text-align: center; margin-bottom: 40px; font-weight: 800;">Perguntas Frequentes</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-header">O tapete serve para o meu carro? <span><i class="fas fa-chevron-down"></i></span></button>
-                    <div class="accordion-content"><p>Sim! Nossos tapetes são fabricados sob medida para cada modelo de veículo, garantindo encaixe perfeito.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-header">Como é feita a fixação do tapete? <span><i class="fas fa-chevron-down"></i></span></button>
-                    <div class="accordion-content"><p>Eles utilizam os pinos de fixação originais do seu carro, garantindo que não deslizem durante a direção.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-header">O tapete é realmente 100% impermeável? <span><i class="fas fa-chevron-down"></i></span></button>
-                    <div class="accordion-content"><p>Sim, o material TPE é totalmente impermeável e a borda elevada impede que líquidos escorram para o carpete.</p></div>
+                    <!-- Review 3 -->
+                    <div class="review-card">
+                        <img src="assets/images/social-proof/4.png" alt="Instalado" class="review-photo">
+                        <div class="review-user">
+                            <div class="user-avatar">F</div>
+                            <div class="user-meta"><strong>Fernando Bueno</strong><span>Pontalina, GO • Chevrolet Tracker</span></div>
+                        </div>
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">"Aqui chove muito e sempre entrava lama. Desde que coloquei acabou o problema. Entrega rápida!"</p>
+                        <div class="verified-badge"><i class="fas fa-check-circle"></i> Compra Verificada</div>
+                    </div>
+                    <!-- Review 4 -->
+                    <div class="review-card">
+                        <img src="assets/images/social-proof/5.png" alt="Instalado" class="review-photo">
+                        <div class="review-user">
+                            <div class="user-avatar">J</div>
+                            <div class="user-meta"><strong>Juliano Santos</strong><span>Porto Alegre, RS • Jeep Compass</span></div>
+                        </div>
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">"Tenho cachorro e o carro ficava cheio de pelo. Agora é só tirar e lavar. Parece peça original!"</p>
+                        <div class="verified-badge"><i class="fas fa-check-circle"></i> Compra Verificada</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -306,40 +185,21 @@
         <section class="final-cta">
             <div class="container">
                 <h2>Não Deixe Para Depois — Proteja Seu Carro Agora</h2>
-                <p>Oferta da Semana do Cliente — Válida por tempo limitado</p>
-                
                 <div class="countdown">
-                    <div class="time-unit">
-                        <span class="val">00</span>
-                        <span class="lab">Dias</span>
-                    </div>
-                    <div class="time-unit">
-                        <span class="val" id="hours-final">13</span>
-                        <span class="lab">Horas</span>
-                    </div>
-                    <div class="time-unit">
-                        <span class="val" id="minutes-final">28</span>
-                        <span class="lab">Min</span>
-                    </div>
-                    <div class="time-unit">
-                        <span class="val" id="seconds-final">58</span>
-                        <span class="lab">Seg</span>
-                    </div>
+                    <div class="time-unit"><span class="val">00</span><span class="lab">Dias</span></div>
+                    <div class="time-unit"><span class="val" id="hours-final">13</span><span class="lab">Horas</span></div>
+                    <div class="time-unit"><span class="val" id="minutes-final">28</span><span class="lab">Min</span></div>
+                    <div class="time-unit"><span class="val" id="seconds-final">58</span><span class="lab">Seg</span></div>
                 </div>
-
-                <p style="font-size: 12px; margin-bottom: 30px;"><i class="fas fa-lock"></i> Apenas 47 unidades em estoque para o modelo selecionado</p>
                 <button class="btn-final">GARANTIR MEU TAPETE COM DESCONTO →</button>
-                <p style="font-size: 11px; margin-top: 20px; color: rgba(255,255,255,0.6);">
-                    <i class="fas fa-shield-alt"></i> Pagamento 100% Seguro | <i class="fas fa-truck"></i> Frete Grátis | <i class="fas fa-history"></i> 7 dias para devolver
-                </p>
             </div>
         </section>
     </main>
 
-    <footer class="footer-full" style="background: #0d1b3e; color: #fff; border-top: none;">
+    <footer class="footer-full">
         <div class="container">
-            <p style="font-size: 12px; opacity: 0.6; margin-bottom: 20px;">© 2024 Oliveira Auto Parts. Todos os direitos reservados.</p>
-            <div class="payment-badges" style="filter: brightness(0) invert(1); opacity: 0.8;">
+            <p style="font-size: 11px; opacity: 0.6;">© 2024 Oliveira Auto Parts. Todos os direitos reservados.</p>
+            <div class="payment-badges">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Pix%28logo%29.svg" alt="Pix">
@@ -350,7 +210,7 @@
     <!-- Sticky Footer -->
     <div class="sticky-footer" id="sticky-cta">
         <div class="sticky-timer">OFERTA TERMINA EM: <span id="sticky-time">13:28:58</span></div>
-        <button class="btn-buy" style="padding: 12px; margin: 0;">GARANTIR COM DESCONTO</button>
+        <button class="btn-buy" style="padding: 10px; margin: 0; font-size: 14px;">GARANTIR COM DESCONTO</button>
     </div>
 
     <script src="main.js"></script>
