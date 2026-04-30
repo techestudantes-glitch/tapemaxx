@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oliveira Auto Parts | Tapetes 3D Premium</title>
+    <title>Oliveira Auto Parts | Tapetes Automotivos 3D</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="top-bar">
-        ENVIAMOS PARA TODO O BRASIL • FRETE GRÁTIS HOJE
+        MÊS DE ANIVERSÁRIO — Frete Grátis para Todo o Brasil
     </div>
 
     <header class="main-header">
@@ -23,11 +23,12 @@
                 </div>
             </div>
             <nav class="sub-nav">
-                <a href="#inicio">INÍCIO</a>
-                <a href="#beneficios">BENEFÍCIOS</a>
-                <a href="#comparacao">COMPARAÇÃO</a>
-                <a href="#depoimentos">DEPOIMENTOS</a>
-                <a href="#faq">DÚVIDAS</a>
+                <a href="#inicio">Início</a>
+                <a href="#beneficios">Benefícios</a>
+                <a href="#comparacao">Comparação</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#especificacoes">Especificações</a>
+                <a href="#faq">Dúvidas</a>
             </nav>
         </div>
     </header>
@@ -36,8 +37,8 @@
         <!-- Hero Section -->
         <section id="inicio" class="hero">
             <div class="container">
-                <h1>Proteção Absoluta para o Carpete do seu Carro</h1>
-                <p>O Tapete 3D Premium que une sofisticação, durabilidade e limpeza impecável.</p>
+                <h1>Proteção Total para o Carpete do seu Carro</h1>
+                <p>O Tapete 3D Premium é 100% sob medida, com bordas elevadas que retêm toda a sujeira e líquidos.</p>
                 
                 <div class="carousel" id="main-carousel">
                     <div class="carousel-inner">
@@ -47,208 +48,203 @@
                     </div>
                     <button class="nav-btn prev">❮</button>
                     <button class="nav-btn next">❯</button>
+                    <div class="carousel-dots">
+                        <div class="dot active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Wizard Section -->
+        <!-- Compact Wizard Section - 4 Steps -->
         <section class="wizard-section">
             <div class="container">
-                <div class="wizard-top-badge">
-                    <span class="icon">🚗</span> CONSULTE O SEU VEÍCULO
-                </div>
                 <div class="wizard-card">
-                    <div class="wizard-steps-container">
-                        <div class="wizard-step-item active">
-                            <div class="step-num">1</div>
-                        </div>
-                        <div class="step-line"></div>
-                        <div class="wizard-step-item">
-                            <div class="step-num">2</div>
-                        </div>
-                        <div class="step-line"></div>
-                        <div class="wizard-step-item">
-                            <div class="step-num">3</div>
-                        </div>
-                    </div>
-
+                    <h2 class="wizard-title">🚗 Selecione o seu Veículo</h2>
                     <div class="wizard-form">
                         <div class="form-group">
-                            <label>1. TIPO DE VEÍCULO</label>
+                            <label>1. Tipo</label>
                             <select id="vehicle-type">
                                 <option value="">Selecione...</option>
                                 <option value="sedan">Sedan</option>
-                                <option value="suv">SUV / Crossover</option>
+                                <option value="suv">SUV</option>
                                 <option value="picape">Picape</option>
                                 <option value="hatch">Hatch</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>2. MARCA</label>
+                            <label>2. Marca</label>
                             <select id="vehicle-brand" disabled>
-                                <option value="">Aguardando tipo...</option>
+                                <option value="">Aguardando...</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>3. MODELO</label>
+                            <label>3. Modelo</label>
                             <select id="vehicle-model" disabled>
-                                <option value="">Aguardando marca...</option>
+                                <option value="">Aguardando...</option>
                             </select>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Product Selection (Visible after wizard) -->
-                <div class="product-pricing-card">
-                    <div class="product-image-box">
-                        <img src="assets/images/kit-interno-Tk9H7iJ2.jpg" alt="Kit Interno">
-                        <span class="badge-discount">-40%</span>
-                        <span class="badge-best-seller">MELHOR PREÇO</span>
-                    </div>
-                    <div class="product-header">
-                        <h3>Kit Tapetes Interno</h3>
-                        <p>Sem porta-malas</p>
-                    </div>
-                    <div class="price-box">
-                        <span class="old-price">R$ 312,80</span>
-                        <div class="main-price">R$ 187,10</div>
-                        <span class="savings">Economize R$ 125,70</span>
-                        <div class="installments">ou em até 3x sem juros no cartão</div>
-                    </div>
-                </div>
-
-                <div class="product-pricing-card">
-                    <div class="product-image-box">
-                        <img src="assets/images/kit-completo-DuT0vGkO.jpg" alt="Kit Completo">
-                        <span class="badge-discount">-35%</span>
-                        <span class="badge-best-seller">MAIS VENDIDO</span>
-                    </div>
-                    <div class="product-header">
-                        <h3>Kit Tapetes Interno + Porta-Malas</h3>
-                        <p>Proteção completa para cabine e carga</p>
-                    </div>
-                    <div class="price-box">
-                        <span class="old-price">R$ 436,46</span>
-                        <div class="main-price">R$ 283,70</div>
-                        <span class="savings">Economize R$ 152,76</span>
-                        <div class="installments">ou em até 3x sem juros no cartão</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Before/After Section -->
-        <section id="comparacao" class="benefits-section">
-            <div class="container">
-                <h2 class="section-title">Veja a Diferença na Prática</h2>
-                <p class="section-subtitle">Deslize para comparar o tapete comum vs nosso Tapete 3D Premium</p>
-                
-                <div class="comparison-slider" id="comparison-slider">
-                    <div class="img after-img">
-                        <img src="assets/images/hero-tapete-3-CjEBeeXw.jpg" alt="Depois">
-                        <span class="label after">DEPOIS (OLIVEIRA)</span>
-                    </div>
-                    <div class="img before-img">
-                        <img src="assets/images/social-proof/1.png" alt="Antes">
-                        <span class="label before">ANTES</span>
-                    </div>
-                    <div class="slider-handle"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Social Proof Videos -->
-        <section id="depoimentos" class="benefits-section" style="background: #f8faff;">
-            <div class="container">
-                <h2 class="section-title">Quem Usa, Recomenda</h2>
-                <div class="video-grid">
-                    <div class="video-card">
-                        <video src="assets/videos/video-mulher-2.mp4" playsinline loop></video>
-                        <div class="play-btn">▶</div>
-                    </div>
-                    <div class="video-card">
-                        <video src="assets/videos/video-homem-1.mp4" playsinline loop></video>
-                        <div class="play-btn">▶</div>
-                    </div>
-                    <div class="video-card">
-                        <video src="assets/videos/video-homem-2.mp4" playsinline loop></video>
-                        <div class="play-btn">▶</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section id="faq" class="faq-section">
-            <div class="container">
-                <h2 class="section-title">Perguntas Frequentes</h2>
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <button class="accordion-header">O tapete serve no meu carro? <span>+</span></button>
-                        <div class="accordion-content">
-                            <p>Sim! Nossos tapetes são fabricados sob medida para cada modelo de veículo, garantindo encaixe perfeito e cobertura total do carpete.</p>
+                        <div class="form-group">
+                            <label>4. Ano</label>
+                            <select id="vehicle-year" disabled>
+                                <option value="">Aguardando...</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="grid-column: 1 / -1;">
+                            <label>Observação (Opcional)</label>
+                            <input type="text" placeholder="Ex: Câmbio manual/automático...">
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">Qual o prazo de entrega? <span>+</span></button>
-                        <div class="accordion-content">
-                            <p>O prazo médio é de 5 a 12 dias úteis, dependendo da sua região. Oferecemos Frete Grátis para todo o Brasil.</p>
+                </div>
+
+                <!-- Product Selection -->
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-badge">-40% MELHOR PREÇO</div>
+                        <div class="product-image">
+                            <img src="assets/images/kit-interno-Tk9H7iJ2.jpg" alt="Kit Interno">
+                        </div>
+                        <div class="product-info">
+                            <h3>Kit Tapetes Interno (Frente e Trás)</h3>
+                            <div class="price-container">
+                                <span class="old-price">R$ 312,80</span>
+                                <div class="current-price">R$ 187,10</div>
+                                <div class="installments">ou 3x de R$ 62,36 sem juros</div>
+                            </div>
+                            <button class="btn-buy">COMPRAR AGORA</button>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">O material é resistente? <span>+</span></button>
-                        <div class="accordion-content">
-                            <p>Sim, utilizamos TPE de alta densidade, resistente a rasgos, furos e variações extremas de temperatura. Não resseca e não deforma.</p>
+
+                    <div class="product-card">
+                        <div class="product-badge">-35% MAIS VENDIDO</div>
+                        <div class="product-image">
+                            <img src="assets/images/kit-completo-DuT0vGkO.jpg" alt="Kit Completo">
+                        </div>
+                        <div class="product-info">
+                            <h3>Kit Tapetes Interno + Porta-Malas</h3>
+                            <div class="price-container">
+                                <span class="old-price">R$ 436,46</span>
+                                <div class="current-price">R$ 283,70</div>
+                                <div class="installments">ou 3x de R$ 94,56 sem juros</div>
+                            </div>
+                            <button class="btn-buy">COMPRAR AGORA</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Final CTA -->
-        <section class="final-cta-section">
+        <!-- Before/After -->
+        <section id="comparacao" class="container" style="padding: 50px 16px;">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">Veja a Diferença</h2>
+            <div class="comparison-slider" id="comparison-slider">
+                <div class="img after-img">
+                    <img src="assets/images/hero-tapete-3-CjEBeeXw.jpg" alt="Depois">
+                    <span class="label after">DEPOIS</span>
+                </div>
+                <div class="img before-img">
+                    <img src="assets/images/social-proof/1.png" alt="Antes">
+                    <span class="label before">ANTES</span>
+                </div>
+                <div class="slider-handle"></div>
+            </div>
+        </section>
+
+        <!-- Video Testimonials -->
+        <section id="depoimentos" style="background: #f8faff; padding: 50px 0;">
             <div class="container">
-                <h2 class="cta-title">Garanta o Seu com Desconto Exclusivo</h2>
-                <div class="stock-warning">⚠️ Apenas 47 unidades em estoque para esta promoção</div>
-                
-                <div class="countdown-timer">
-                    <div class="timer-unit">
-                        <div class="unit-val" id="hours">13</div>
-                        <span>Horas</span>
+                <h2 style="text-align: center; margin-bottom: 30px; font-weight: 800;">Quem usa aprova!</h2>
+                <div class="video-reviews">
+                    <div class="review-card">
+                        <div class="video-box">
+                            <video src="assets/videos/video-mulher-2.mp4" playsinline loop></video>
+                            <div class="play-btn">▶</div>
+                        </div>
+                        <div class="review-info">
+                            <strong>Juliana S.</strong>
+                            <span>São Paulo, SP</span>
+                            <span class="verified-tag">✓ Compra Verificada</span>
+                        </div>
                     </div>
-                    <div class="timer-unit">
-                        <div class="unit-val" id="minutes">24</div>
-                        <span>Min</span>
+                    <div class="review-card">
+                        <div class="video-box">
+                            <video src="assets/videos/video-homem-1.mp4" playsinline loop></video>
+                            <div class="play-btn">▶</div>
+                        </div>
+                        <div class="review-info">
+                            <strong>Marcos R.</strong>
+                            <span>Curitiba, PR</span>
+                            <span class="verified-tag">✓ Compra Verificada</span>
+                        </div>
                     </div>
-                    <div class="timer-unit">
-                        <div class="unit-val" id="seconds">02</div>
-                        <span>Seg</span>
+                    <div class="review-card">
+                        <div class="video-box">
+                            <video src="assets/videos/video-homem-2.mp4" playsinline loop></video>
+                            <div class="play-btn">▶</div>
+                        </div>
+                        <div class="review-info">
+                            <strong>Ricardo M.</strong>
+                            <span>Belo Horizonte, MG</span>
+                            <span class="verified-tag">✓ Compra Verificada</span>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <button class="btn-primary-large">ESCOLHER MEU VEÍCULO AGORA</button>
+        <!-- FAQ -->
+        <section id="faq" class="container" style="padding: 50px 16px;">
+            <h2 style="text-align: center; margin-bottom: 30px; font-weight: 800;">Dúvidas Frequentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-header">Como saber se serve no meu carro? <span>+</span></button>
+                    <div class="accordion-content"><p>Nossos tapetes são feitos com escaneamento 3D a laser, garantindo 100% de precisão para o modelo do seu veículo.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-header">Qual o prazo de entrega? <span>+</span></button>
+                    <div class="accordion-content"><p>O prazo varia de 5 a 12 dias úteis. Enviamos o código de rastreio em até 48h após a postagem.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-header">Tem garantia? <span>+</span></button>
+                    <div class="accordion-content"><p>Sim! Você tem 7 dias de satisfação garantida ou seu dinheiro de volta, além de 1 ano de garantia contra defeitos de fabricação.</p></div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer">
+    <!-- Detailed Footer -->
+    <footer class="footer-full">
         <div class="container">
-            <div class="footer-logo">
-                <img src="assets/images/logo-BbDuOFYn.png" alt="Oliveira Auto Parts">
+            <div class="footer-section">
+                <img src="assets/images/logo-BbDuOFYn.png" alt="Logo" style="height: 30px; margin-bottom: 15px;">
+                <p class="footer-text">A Oliveira Auto Parts é líder nacional em acessórios automotivos de luxo, unindo tecnologia e design para proteger seu patrimônio.</p>
             </div>
-            <p class="address">Av. Primeiro de Maio, 1234 - Iracemápolis, SP - CEP 13495-000</p>
-            <div class="whatsapp-contact">Suporte via WhatsApp: (19) 99876-5432</div>
-            <div class="footer-links">
-                <a href="#">Termos de Uso</a>
-                <a href="#">Política de Privacidade</a>
-                <a href="#">Trocas e Devoluções</a>
+            <div class="footer-section">
+                <h4 class="footer-title">Contato</h4>
+                <p class="footer-text">WhatsApp: (19) 99876-5432</p>
+                <p class="footer-text">Email: suporte@oliveiraautoparts.com</p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Pagamento Seguro</h4>
+                <div class="payment-badges">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="Paypal">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Pix%28logo%29.svg" alt="Pix">
+                </div>
+            </div>
+            <div class="security-badges">
+                <img src="https://seal.godaddy.com/images/3/en/siteseal_gd_3_h_l_m.gif" alt="SSL" style="height: 40px;">
+                <img src="https://www.google.com/safebrowsing/static/img/google_safe_browsing_logo.png" alt="Safe" style="height: 30px;">
             </div>
         </div>
     </footer>
 
-    <!-- Sticky Footer -->
-    <div class="sticky-footer" style="transform: translateY(100%); opacity: 0; transition: all 0.3s;">
-        <button class="btn-sticky-action">ESCOLHER MEU TAPETE</button>
+    <!-- Sticky CTA -->
+    <div class="sticky-cta">
+        <div class="urgency-text">🔥 Promoção encerra em: <span id="sticky-timer">13:24:02</span></div>
+        <button class="btn-buy" style="padding: 12px;">COMPRAR AGORA</button>
     </div>
 
     <script src="main.js"></script>
