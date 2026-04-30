@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Vehicle Data (Enhanced)
+    // Vehicle Data
     const vehicleData = {
         sedan: {
             brands: {
@@ -14,91 +14,91 @@ document.addEventListener('DOMContentLoaded', () => {
                 toyota: { models: ['Corolla Cross', 'SW4'], years: ['2021-2024', '2016-2020'] },
                 hyundai: { models: ['Creta'], years: ['2020-2024', '2017-2019'] }
             }
+        },
+        picape: {
+            brands: {
+                toyota: { models: ['Hilux'], years: ['2016-2024'] },
+                ford: { models: ['Ranger'], years: ['2017-2024'] },
+                fiat: { models: ['Toro'], years: ['2016-2024'] }
+            }
         }
     };
 
-    // Wizard Logic
-    const selects = {
-        type: document.getElementById('vehicle-type'),
-        brand: document.getElementById('vehicle-brand'),
-        model: document.getElementById('vehicle-model'),
-        year: document.getElementById('vehicle-year')
-    };
+    // Wizard
+    const typeSelect = document.getElementById('vehicle-type');
+    const brandSelect = document.getElementById('vehicle-brand');
+    const modelSelect = document.getElementById('vehicle-model');
+    const yearSelect = document.getElementById('vehicle-year');
+    const steps = document.querySelectorAll('.step-item');
 
-    selects.type?.addEventListener('change', () => {
-        const val = selects.type.value;
-        selects.brand.innerHTML = '<option value="">Selecione...</option>';
-        selects.model.innerHTML = '<option value="">Aguardando...</option>';
-        selects.year.innerHTML = '<option value="">Aguardando...</option>';
-        selects.brand.disabled = !val;
-        selects.model.disabled = true;
-        selects.year.disabled = true;
+    typeSelect?.addEventListener('change', () => {
+        const type = typeSelect.value;
+        brandSelect.innerHTML = '<option value="">Selecione a marca</option>';
+        modelSelect.innerHTML = '<option value="">Aguardando marca</option>';
+        yearSelect.innerHTML = '<option value="">Aguardando modelo</option>';
+        brandSelect.disabled = !type;
+        modelSelect.disabled = true;
+        yearSelect.disabled = true;
+        
+        steps.forEach(s => s.classList.remove('active'));
+        steps[0].classList.add('active');
 
-        if (val && vehicleData[val]) {
-            Object.keys(vehicleData[val].brands).forEach(b => {
-                const opt = new Option(b.toUpperCase(), b);
-                selects.brand.add(opt);
+        if (type && vehicleData[type]) {
+            Object.keys(vehicleData[type].brands).forEach(b => {
+                brandSelect.add(new Option(b.toUpperCase(), b));
             });
+            steps[1].classList.add('active');
         }
     });
 
-    selects.brand?.addEventListener('change', () => {
-        const type = selects.type.value;
-        const brand = selects.brand.value;
-        selects.model.innerHTML = '<option value="">Selecione...</option>';
-        selects.model.disabled = !brand;
+    brandSelect?.addEventListener('change', () => {
+        const type = typeSelect.value;
+        const brand = brandSelect.value;
+        modelSelect.innerHTML = '<option value="">Selecione o modelo</option>';
+        modelSelect.disabled = !brand;
 
-        if (type && brand && vehicleData[type].brands[brand]) {
+        if (type && brand) {
             vehicleData[type].brands[brand].models.forEach(m => {
-                selects.model.add(new Option(m, m));
+                modelSelect.add(new Option(m, m));
             });
+            steps[2].classList.add('active');
         }
     });
 
-    selects.model?.addEventListener('change', () => {
-        const type = selects.type.value;
-        const brand = selects.brand.value;
-        selects.year.innerHTML = '<option value="">Selecione...</option>';
-        selects.year.disabled = !selects.model.value;
+    modelSelect?.addEventListener('change', () => {
+        const type = typeSelect.value;
+        const brand = brandSelect.value;
+        const model = modelSelect.value;
+        yearSelect.innerHTML = '<option value="">Selecione o ano</option>';
+        yearSelect.disabled = !model;
 
-        if (type && brand && vehicleData[type].brands[brand]) {
+        if (type && brand && model) {
             vehicleData[type].brands[brand].years.forEach(y => {
-                selects.year.add(new Option(y, y));
+                yearSelect.add(new Option(y, y));
             });
+            steps[3].classList.add('active');
         }
     });
 
-    // Carousel with Dots
+    // Carousel
     const carousel = document.getElementById('main-carousel');
     if (carousel) {
         const images = carousel.querySelectorAll('.carousel-inner img');
         const dots = carousel.querySelectorAll('.dot');
         let current = 0;
 
-        function show(idx) {
+        const show = (i) => {
             images.forEach(img => img.classList.remove('active'));
             dots.forEach(d => d.classList.remove('active'));
-            images[idx].classList.add('active');
-            dots[idx].classList.add('active');
-            current = idx;
-        }
+            images[i].classList.add('active');
+            dots[i].classList.add('active');
+            current = i;
+        };
 
-        carousel.querySelector('.prev')?.addEventListener('click', () => {
-            let idx = (current - 1 + images.length) % images.length;
-            show(idx);
-        });
-
-        carousel.querySelector('.next')?.addEventListener('click', () => {
-            let idx = (current + 1) % images.length;
-            show(idx);
-        });
-
-        dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));
-        
-        setInterval(() => {
-            let idx = (current + 1) % images.length;
-            show(idx);
-        }, 4000);
+        carousel.querySelector('.prev')?.addEventListener('click', () => show((current - 1 + images.length) % images.length));
+        carousel.querySelector('.next')?.addEventListener('click', () => show((current + 1) % images.length));
+        dots.forEach((d, i) => d.addEventListener('click', () => show(i)));
+        setInterval(() => show((current + 1) % images.length), 5000);
     }
 
     // Comparison Slider
@@ -106,57 +106,73 @@ document.addEventListener('DOMContentLoaded', () => {
     if (slider) {
         const before = slider.querySelector('.before-img');
         const handle = slider.querySelector('.slider-handle');
-
         const move = (e) => {
             const rect = slider.getBoundingClientRect();
-            const pageX = e.pageX || (e.touches ? e.touches[0].pageX : 0);
-            let pos = ((pageX - rect.left) / rect.width) * 100;
-            pos = Math.max(0, Math.min(100, pos));
-            before.style.width = `${pos}%`;
-            handle.style.left = `${pos}%`;
+            const x = (e.pageX || e.touches[0].pageX) - rect.left;
+            let p = (x / rect.width) * 100;
+            p = Math.max(0, Math.min(100, p));
+            before.style.width = `${p}%`;
+            handle.style.left = `${p}%`;
         };
-
         slider.addEventListener('mousemove', move);
         slider.addEventListener('touchmove', move);
     }
 
-    // FAQ Accordion
-    document.querySelectorAll('.faq-header').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const content = btn.nextElementSibling;
-            const isOpen = content.style.maxHeight;
-            document.querySelectorAll('.accordion-content').forEach(c => c.style.maxHeight = null);
-            if (!isOpen) content.style.maxHeight = content.scrollHeight + "px";
+    // FAQ
+    document.querySelectorAll('.faq-header').forEach(h => {
+        h.addEventListener('click', () => {
+            const c = h.nextElementSibling;
+            const open = c.style.maxHeight;
+            document.querySelectorAll('.accordion-content').forEach(el => el.style.maxHeight = null);
+            if (!open) c.style.maxHeight = c.scrollHeight + "px";
         });
     });
 
-    // Countdown Timer (Sticky & Final CTA)
-    function startTimer() {
-        let seconds = 13 * 3600 + 24 * 60 + 2;
-        const display = document.getElementById('sticky-timer');
+    // Timers
+    function startTimers() {
+        let time = 13 * 3600 + 28 * 60 + 58;
+        const sticky = document.getElementById('sticky-time');
+        const hFinal = document.getElementById('hours-final');
+        const mFinal = document.getElementById('minutes-final');
+        const sFinal = document.getElementById('seconds-final');
 
         setInterval(() => {
-            if (seconds <= 0) return;
-            seconds--;
-            const h = Math.floor(seconds / 3600);
-            const m = Math.floor((seconds % 3600) / 60);
-            const s = seconds % 60;
-            const timeStr = `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-            if (display) display.innerText = timeStr;
+            if (time <= 0) return;
+            time--;
+            const h = Math.floor(time / 3600);
+            const m = Math.floor((time % 3600) / 60);
+            const s = time % 60;
+            const str = `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+            if (sticky) sticky.innerText = str;
+            if (hFinal) hFinal.innerText = String(h).padStart(2,'0');
+            if (mFinal) mFinal.innerText = String(m).padStart(2,'0');
+            if (sFinal) sFinal.innerText = String(s).padStart(2,'0');
         }, 1000);
     }
-    startTimer();
+    startTimers();
 
-    // Video Reviews Play
-    document.querySelectorAll('.video-box').forEach(box => {
-        const video = box.querySelector('video');
-        box.addEventListener('click', () => {
-            if (video.paused) {
-                video.play();
-                box.querySelector('.play-btn').style.display = 'none';
+    // Sticky CTA show/hide
+    const stickyCta = document.getElementById('sticky-cta');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+            stickyCta.style.transform = 'translateY(0)';
+            stickyCta.style.opacity = '1';
+        } else {
+            stickyCta.style.transform = 'translateY(100%)';
+            stickyCta.style.opacity = '0';
+        }
+    });
+
+    // Video Play
+    document.querySelectorAll('.video-card').forEach(card => {
+        const v = card.querySelector('video');
+        card.addEventListener('click', () => {
+            if (v.paused) {
+                v.play();
+                card.querySelector('.play-icon').style.display = 'none';
             } else {
-                video.pause();
-                box.querySelector('.play-btn').style.display = 'flex';
+                v.pause();
+                card.querySelector('.play-icon').style.display = 'flex';
             }
         });
     });
